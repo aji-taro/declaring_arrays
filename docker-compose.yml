@@ -1,0 +1,11 @@
+services:
+  arrays_ubuntu:
+    container_name: arrays_ubuntu
+    build: ./docker
+    tty: true
+    working_dir: /home/app
+    volumes:
+      - ./:/home/app
+      - node_modules:/home/app/node_modules
+volumes:
+  node_modules:
